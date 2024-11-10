@@ -1,10 +1,11 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.kcals.loyaltyapp.R
 import com.kcals.loyaltyapp.databinding.FragmentVoucherBinding
 
 class VoucherFragment : Fragment() {

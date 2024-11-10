@@ -1,20 +1,25 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.kcals.loyaltyapp.databinding.FragmentScanBinding
+import com.kcals.loyaltyapp.databinding.FragmentHomeBinding
 
-class ScanFragment : Fragment() {
-    private lateinit var binding: FragmentScanBinding
+class HomeFragment : Fragment() {
+    lateinit var binding: FragmentHomeBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentScanBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater,container, false)
+        initViews()
         return binding.root
+
     }
 
+    private fun initViews() {
+    }
 }

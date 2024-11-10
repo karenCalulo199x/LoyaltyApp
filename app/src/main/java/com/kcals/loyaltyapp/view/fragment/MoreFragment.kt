@@ -1,4 +1,4 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

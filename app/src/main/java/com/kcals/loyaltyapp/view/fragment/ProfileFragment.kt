@@ -1,8 +1,9 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.view.fragment
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.kcals.loyaltyapp.R
 import com.kcals.loyaltyapp.base.BaseFragment
 import com.kcals.loyaltyapp.databinding.FragmentProfileBinding
 

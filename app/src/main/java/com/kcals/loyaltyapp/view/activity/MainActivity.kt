@@ -1,4 +1,4 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.view.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.kcals.loyaltyapp.R
 import com.kcals.loyaltyapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 

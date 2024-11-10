@@ -1,4 +1,4 @@
-package com.kcals.loyaltyapp
+package com.kcals.loyaltyapp.model.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

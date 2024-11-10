@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/home_fragment_nav"
-        android:name="com.kcals.loyaltyapp.HomeFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/account_fragment_nav"
-        android:name="com.kcals.loyaltyapp.AccountFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.AccountFragment"
         android:label="@string/account"
         tools:layout="@layout/fragment_account">
         <action
@@ -23,22 +23,22 @@
 
     <fragment
         android:id="@+id/scan_fragment_nav"
-        android:name="com.kcals.loyaltyapp.ScanFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.ScanFragment"
         android:label="@string/scan"
         tools:layout="@layout/fragment_scan" />
     <fragment
         android:id="@+id/voucher_fragment_nav"
-        android:name="com.kcals.loyaltyapp.VoucherFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.VoucherFragment"
         android:label="@string/vouchers"
         tools:layout="@layout/fragment_voucher" />
     <fragment
         android:id="@+id/more_fragment_nav"
-        android:name="com.kcals.loyaltyapp.MoreFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.MoreFragment"
         android:label="@string/more"
         tools:layout="@layout/fragment_more" />
     <fragment
         android:id="@+id/profile_fragment_nav"
-        android:name="com.kcals.loyaltyapp.ProfileFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.ProfileFragment"
         android:label="@string/profle"
         tools:layout="@layout/fragment_more">
         <action
@@ -48,7 +48,7 @@
 
     <fragment
         android:id="@+id/name_fragment_nav"
-        android:name="com.kcals.loyaltyapp.UserNameFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.UserNameFragment"
         android:label="Name"
         tools:layout="@layout/fragment_user_name" />
 

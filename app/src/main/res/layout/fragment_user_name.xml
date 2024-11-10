@@ -14,6 +14,7 @@
         android:hint="@string/first_name">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first_name_tied"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -27,6 +28,7 @@
         android:hint="@string/last_name">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/last_name_tied"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>

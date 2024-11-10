@@ -50,7 +50,11 @@
         android:id="@+id/name_fragment_nav"
         android:name="com.kcals.loyaltyapp.view.fragment.UserNameFragment"
         android:label="Name"
-        tools:layout="@layout/fragment_user_name" />
+        tools:layout="@layout/fragment_user_name">
+        <action
+            android:id="@+id/action_name_fragment_nav_to_profile_fragment_nav"
+            app:destination="@id/profile_fragment_nav" />
+    </fragment>
 
 
 </navigation>

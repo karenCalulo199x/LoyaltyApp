@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_fragment_nav"
+        android:icon="@mipmap/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/account_fragment_nav"
+        android:icon="@mipmap/profile"
+        android:title="@string/account" />
+    <item
+        android:id="@+id/scan_fragment_nav"
+        android:icon="@mipmap/scan"
+        android:title="@string/scan" />
+    <item
+        android:id="@+id/voucher_fragment_nav"
+        android:icon="@mipmap/voucher"
+        android:title="@string/vouchers" />
+    <item
+        android:id="@+id/more_fragment_nav"
+        android:icon="@mipmap/more"
+        android:title="@string/more" />
+</menu>

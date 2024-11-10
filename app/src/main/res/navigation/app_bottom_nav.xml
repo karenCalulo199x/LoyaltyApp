@@ -15,7 +15,11 @@
         android:id="@+id/account_fragment_nav"
         android:name="com.kcals.loyaltyapp.AccountFragment"
         android:label="@string/account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_account_fragment_nav_to_profile_fragment_nav"
+            app:destination="@id/profile_fragment_nav" />
+    </fragment>
 
     <fragment
         android:id="@+id/scan_fragment_nav"
@@ -32,6 +36,21 @@
         android:name="com.kcals.loyaltyapp.MoreFragment"
         android:label="@string/more"
         tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/profile_fragment_nav"
+        android:name="com.kcals.loyaltyapp.ProfileFragment"
+        android:label="@string/profle"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_profile_fragment_nav_to_name_fragment_nav"
+            app:destination="@id/name_fragment_nav" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/name_fragment_nav"
+        android:name="com.kcals.loyaltyapp.UserNameFragment"
+        android:label="Name"
+        tools:layout="@layout/fragment_user_name" />
 
 
 </navigation>

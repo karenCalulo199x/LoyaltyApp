@@ -4,20 +4,20 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.kcals.loyaltyapp.base.BaseFragment
-import com.kcals.loyaltyapp.databinding.FragmentAccountBinding
+import com.kcals.loyaltyapp.databinding.FragmentProfileBinding
 
-class AccountFragment : BaseFragment<FragmentAccountBinding>() {
+class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
     override fun getViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentAccountBinding {
-        return FragmentAccountBinding.inflate(inflater, container, false)
+    ): FragmentProfileBinding {
+        return FragmentProfileBinding.inflate(inflater, container, false)
     }
 
     override fun initViews() {
         binding.apply {
-            profileTv.setOnClickListener {
-                findNavController().navigate(R.id.action_account_fragment_nav_to_profile_fragment_nav)
+            nameTv.setOnClickListener {
+                findNavController().navigate(R.id.action_profile_fragment_nav_to_name_fragment_nav)
             }
         }
     }

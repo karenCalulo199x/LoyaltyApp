@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_account_fragment_nav_to_profile_fragment_nav"
             app:destination="@id/profile_fragment_nav" />
+        <action
+            android:id="@+id/action_account_fragment_nav_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
     </fragment>
 
     <fragment
@@ -55,6 +58,11 @@
             android:id="@+id/action_name_fragment_nav_to_profile_fragment_nav"
             app:destination="@id/profile_fragment_nav" />
     </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.kcals.loyaltyapp.view.fragment.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" />
 
 
 </navigation>

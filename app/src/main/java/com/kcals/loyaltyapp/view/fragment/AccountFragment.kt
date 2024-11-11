@@ -20,6 +20,10 @@ class AccountFragment : BaseFragment<FragmentAccountBinding>() {
             profileTv.setOnClickListener {
                 findNavController().navigate(R.id.action_account_fragment_nav_to_profile_fragment_nav)
             }
+            passwordTv.setOnClickListener {
+                findNavController().navigate(R.id.action_account_fragment_nav_to_passwordFragment)
+            }
+
         }
     }
 }

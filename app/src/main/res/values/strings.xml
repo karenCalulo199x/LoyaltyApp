@@ -17,4 +17,8 @@
     <string name="points">Points</string>
     <string name="tier">Tier</string>
     <string name="full_name">Full Name: %s %s</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="re_type_new_password">Re-type New Password</string>
 </resources>

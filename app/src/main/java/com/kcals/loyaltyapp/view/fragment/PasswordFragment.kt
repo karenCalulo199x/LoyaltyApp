@@ -5,15 +5,19 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewModelScope
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.kcals.loyaltyapp.base.BaseFragment
 import com.kcals.loyaltyapp.databinding.FragmentPasswordBinding
+import com.kcals.loyaltyapp.ext.onSNACK
 import com.kcals.loyaltyapp.viewmodel.PasswordInput
 import com.kcals.loyaltyapp.viewmodel.PasswordState
 import com.kcals.loyaltyapp.viewmodel.PasswordViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -43,6 +47,13 @@ class PasswordFragment : BaseFragment<FragmentPasswordBinding>() {
                     verifyCurrentPass(current)
                     verifyNewPass(new)
                     verifyRetypePass(new, retype)
+                }
+                viewLifecycleOwner.lifecycleScope.launch {
+                    viewModel.isAllSuccess.collect {
+                        onSNACK(binding.root, "SUCCESS")
+                        delay(2000L)
+                        findNavController().popBackStack()
+                    }
                 }
             }
         }
@@ -87,6 +98,4 @@ class PasswordFragment : BaseFragment<FragmentPasswordBinding>() {
             override fun afterTextChanged(s: Editable?) {}
         })
     }
-
-
 }

@@ -19,6 +19,8 @@ class PasswordViewModel @Inject constructor() : ViewModel() {
     private val _reTypePassState = MutableStateFlow<PasswordState>(PasswordState.Idle)
     val reTypePassState: StateFlow<PasswordState> get() = _reTypePassState
 
+    val isAllSuccess = MutableStateFlow<Boolean>(false)
+
     fun verifyCurrentPass(pass: String) {
         viewModelScope.launch {
             _currentPassState.value = when {
@@ -54,7 +56,18 @@ class PasswordViewModel @Inject constructor() : ViewModel() {
             PasswordInput.CURRENT -> _currentPassState.value = PasswordState.Idle
             PasswordInput.NEW -> _newPassState.value = PasswordState.Idle
             PasswordInput.RETYPE -> _reTypePassState.value = PasswordState.Idle
+        }
+        isAllSuccess()
+    }
 
+    private fun isAllSuccess() {
+        viewModelScope.launch {
+            if (_currentPassState.value == PasswordState.Success &&
+                _newPassState.value == PasswordState.Success &&
+                _reTypePassState.value == PasswordState.Success
+            ) {
+                isAllSuccess.value = true
+            }
         }
     }
 
